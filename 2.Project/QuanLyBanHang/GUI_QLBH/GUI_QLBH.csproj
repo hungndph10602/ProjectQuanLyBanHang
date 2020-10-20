@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hồ Sơ Nhân Viên.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hồ Sơ Nhân Viên.Designer.cs">
+      <DependentUpon>Hồ Sơ Nhân Viên.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khách Hàng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khách Hàng.Designer.cs">
+      <DependentUpon>Khách Hàng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nhân Viên.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nhân Viên.Designer.cs">
+      <DependentUpon>Nhân Viên.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sản Phẩm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sản Phẩm.Designer.cs">
+      <DependentUpon>Sản Phẩm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thống Kê Sản Phẩm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thống Kê Sản Phẩm.Designer.cs">
+      <DependentUpon>Thống Kê Sản Phẩm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trang Chủ.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +90,15 @@
     <Compile Include="Đăng Nhập.Designer.cs">
       <DependentUpon>Đăng Nhập.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Hồ Sơ Nhân Viên.resx">
+      <DependentUpon>Hồ Sơ Nhân Viên.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khách Hàng.resx">
+      <DependentUpon>Khách Hàng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nhân Viên.resx">
+      <DependentUpon>Nhân Viên.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -69,6 +108,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Sản Phẩm.resx">
+      <DependentUpon>Sản Phẩm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thống Kê Sản Phẩm.resx">
+      <DependentUpon>Thống Kê Sản Phẩm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Trang Chủ.resx">
       <DependentUpon>Trang Chủ.cs</DependentUpon>
     </EmbeddedResource>

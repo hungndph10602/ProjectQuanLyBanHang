@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL_QLBH
+namespace BUS_QLBH
 {
-    public class Class1
+    class BUS_KHACHHANG
     {
     }
 }

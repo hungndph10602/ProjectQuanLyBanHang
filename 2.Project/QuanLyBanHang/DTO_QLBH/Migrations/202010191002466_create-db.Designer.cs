@@ -13,7 +13,7 @@ namespace DTO_QLBH.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202010210524510_create-db"; }
+            get { return "202010191002466_create-db"; }
         }
         
         string IMigrationMetadata.Source

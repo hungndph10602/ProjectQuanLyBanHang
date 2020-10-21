@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_dienthoaiKH = new System.Windows.Forms.TextBox();
-            this.txt_tenKH = new System.Windows.Forms.TextBox();
-            this.radio_NamKH = new System.Windows.Forms.RadioButton();
-            this.radio_NuKH = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txt_sdtKH = new System.Windows.Forms.TextBox();
-            this.btn_timkiemKH = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btn_themKH = new System.Windows.Forms.Button();
-            this.btn_xoaKH = new System.Windows.Forms.Button();
-            this.btn_luuKH = new System.Windows.Forms.Button();
-            this.btn_suaKH = new System.Windows.Forms.Button();
-            this.btn_boquaKH = new System.Windows.Forms.Button();
-            this.btn_danhsachKH = new System.Windows.Forms.Button();
-            this.btn_dongKH = new System.Windows.Forms.Button();
             this.RTB_DiachiKH = new System.Windows.Forms.RichTextBox();
+            this.btn_dongKH = new System.Windows.Forms.Button();
+            this.btn_danhsachKH = new System.Windows.Forms.Button();
+            this.btn_boquaKH = new System.Windows.Forms.Button();
+            this.btn_suaKH = new System.Windows.Forms.Button();
+            this.btn_luuKH = new System.Windows.Forms.Button();
+            this.btn_xoaKH = new System.Windows.Forms.Button();
+            this.btn_themKH = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btn_timkiemKH = new System.Windows.Forms.Button();
+            this.txt_sdtKH = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.radio_NuKH = new System.Windows.Forms.RadioButton();
+            this.radio_NamKH = new System.Windows.Forms.RadioButton();
+            this.txt_tenKH = new System.Windows.Forms.TextBox();
+            this.txt_dienthoaiKH = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -84,76 +84,111 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Khách Hàng";
             // 
-            // label1
+            // RTB_DiachiKH
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(249, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Khách Hàng";
+            this.RTB_DiachiKH.Location = new System.Drawing.Point(509, 79);
+            this.RTB_DiachiKH.Name = "RTB_DiachiKH";
+            this.RTB_DiachiKH.Size = new System.Drawing.Size(202, 59);
+            this.RTB_DiachiKH.TabIndex = 21;
+            this.RTB_DiachiKH.Text = "";
             // 
-            // label2
+            // btn_dongKH
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Điện Thoại";
+            this.btn_dongKH.Image = global::GUI_QLBH.Properties.Resources.close;
+            this.btn_dongKH.Location = new System.Drawing.Point(664, 449);
+            this.btn_dongKH.Name = "btn_dongKH";
+            this.btn_dongKH.Size = new System.Drawing.Size(75, 52);
+            this.btn_dongKH.TabIndex = 20;
+            this.btn_dongKH.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btn_danhsachKH
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 156);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Họ Và Tên";
+            this.btn_danhsachKH.Image = global::GUI_QLBH.Properties.Resources.checklists;
+            this.btn_danhsachKH.Location = new System.Drawing.Point(552, 449);
+            this.btn_danhsachKH.Name = "btn_danhsachKH";
+            this.btn_danhsachKH.Size = new System.Drawing.Size(78, 52);
+            this.btn_danhsachKH.TabIndex = 19;
+            this.btn_danhsachKH.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // btn_boquaKH
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(414, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Địa Chỉ";
+            this.btn_boquaKH.Image = global::GUI_QLBH.Properties.Resources.right_arrow;
+            this.btn_boquaKH.Location = new System.Drawing.Point(447, 449);
+            this.btn_boquaKH.Name = "btn_boquaKH";
+            this.btn_boquaKH.Size = new System.Drawing.Size(75, 52);
+            this.btn_boquaKH.TabIndex = 18;
+            this.btn_boquaKH.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // btn_suaKH
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(414, 156);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Giới Tính";
+            this.btn_suaKH.Image = global::GUI_QLBH.Properties.Resources.edit;
+            this.btn_suaKH.Location = new System.Drawing.Point(237, 449);
+            this.btn_suaKH.Name = "btn_suaKH";
+            this.btn_suaKH.Size = new System.Drawing.Size(64, 52);
+            this.btn_suaKH.TabIndex = 17;
+            this.btn_suaKH.UseVisualStyleBackColor = true;
             // 
-            // txt_dienthoaiKH
+            // btn_luuKH
             // 
-            this.txt_dienthoaiKH.Location = new System.Drawing.Point(160, 74);
-            this.txt_dienthoaiKH.Name = "txt_dienthoaiKH";
-            this.txt_dienthoaiKH.Size = new System.Drawing.Size(176, 22);
-            this.txt_dienthoaiKH.TabIndex = 5;
+            this.btn_luuKH.Image = global::GUI_QLBH.Properties.Resources.diskette;
+            this.btn_luuKH.Location = new System.Drawing.Point(338, 449);
+            this.btn_luuKH.Name = "btn_luuKH";
+            this.btn_luuKH.Size = new System.Drawing.Size(70, 52);
+            this.btn_luuKH.TabIndex = 16;
+            this.btn_luuKH.UseVisualStyleBackColor = true;
             // 
-            // txt_tenKH
+            // btn_xoaKH
             // 
-            this.txt_tenKH.Location = new System.Drawing.Point(160, 156);
-            this.txt_tenKH.Name = "txt_tenKH";
-            this.txt_tenKH.Size = new System.Drawing.Size(176, 22);
-            this.txt_tenKH.TabIndex = 6;
+            this.btn_xoaKH.Image = global::GUI_QLBH.Properties.Resources.trash;
+            this.btn_xoaKH.Location = new System.Drawing.Point(137, 449);
+            this.btn_xoaKH.Name = "btn_xoaKH";
+            this.btn_xoaKH.Size = new System.Drawing.Size(72, 52);
+            this.btn_xoaKH.TabIndex = 15;
+            this.btn_xoaKH.UseVisualStyleBackColor = true;
             // 
-            // radio_NamKH
+            // btn_themKH
             // 
-            this.radio_NamKH.AutoSize = true;
-            this.radio_NamKH.Location = new System.Drawing.Point(522, 154);
-            this.radio_NamKH.Name = "radio_NamKH";
-            this.radio_NamKH.Size = new System.Drawing.Size(58, 21);
-            this.radio_NamKH.TabIndex = 8;
-            this.radio_NamKH.TabStop = true;
-            this.radio_NamKH.Text = "Nam";
-            this.radio_NamKH.UseVisualStyleBackColor = true;
+            this.btn_themKH.Image = global::GUI_QLBH.Properties.Resources.plus;
+            this.btn_themKH.Location = new System.Drawing.Point(35, 449);
+            this.btn_themKH.Name = "btn_themKH";
+            this.btn_themKH.Size = new System.Drawing.Size(59, 52);
+            this.btn_themKH.TabIndex = 14;
+            this.btn_themKH.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(34, 394);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(188, 17);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Số Điện Thoại Khách Hàng :";
+            // 
+            // btn_timkiemKH
+            // 
+            this.btn_timkiemKH.Image = global::GUI_QLBH.Properties.Resources.search;
+            this.btn_timkiemKH.Location = new System.Drawing.Point(471, 390);
+            this.btn_timkiemKH.Name = "btn_timkiemKH";
+            this.btn_timkiemKH.Size = new System.Drawing.Size(51, 42);
+            this.btn_timkiemKH.TabIndex = 12;
+            this.btn_timkiemKH.UseVisualStyleBackColor = true;
+            // 
+            // txt_sdtKH
+            // 
+            this.txt_sdtKH.Location = new System.Drawing.Point(256, 391);
+            this.txt_sdtKH.Name = "txt_sdtKH";
+            this.txt_sdtKH.Size = new System.Drawing.Size(176, 22);
+            this.txt_sdtKH.TabIndex = 11;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(34, 204);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(705, 150);
+            this.dataGridView1.TabIndex = 10;
             // 
             // radio_NuKH
             // 
@@ -166,111 +201,76 @@
             this.radio_NuKH.Text = "Nữ";
             this.radio_NuKH.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // radio_NamKH
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 204);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(705, 150);
-            this.dataGridView1.TabIndex = 10;
+            this.radio_NamKH.AutoSize = true;
+            this.radio_NamKH.Location = new System.Drawing.Point(522, 154);
+            this.radio_NamKH.Name = "radio_NamKH";
+            this.radio_NamKH.Size = new System.Drawing.Size(58, 21);
+            this.radio_NamKH.TabIndex = 8;
+            this.radio_NamKH.TabStop = true;
+            this.radio_NamKH.Text = "Nam";
+            this.radio_NamKH.UseVisualStyleBackColor = true;
             // 
-            // txt_sdtKH
+            // txt_tenKH
             // 
-            this.txt_sdtKH.Location = new System.Drawing.Point(256, 391);
-            this.txt_sdtKH.Name = "txt_sdtKH";
-            this.txt_sdtKH.Size = new System.Drawing.Size(176, 22);
-            this.txt_sdtKH.TabIndex = 11;
+            this.txt_tenKH.Location = new System.Drawing.Point(160, 156);
+            this.txt_tenKH.Name = "txt_tenKH";
+            this.txt_tenKH.Size = new System.Drawing.Size(176, 22);
+            this.txt_tenKH.TabIndex = 6;
             // 
-            // btn_timkiemKH
+            // txt_dienthoaiKH
             // 
-            this.btn_timkiemKH.Location = new System.Drawing.Point(471, 390);
-            this.btn_timkiemKH.Name = "btn_timkiemKH";
-            this.btn_timkiemKH.Size = new System.Drawing.Size(75, 23);
-            this.btn_timkiemKH.TabIndex = 12;
-            this.btn_timkiemKH.Text = "Tìm Kiếm";
-            this.btn_timkiemKH.UseVisualStyleBackColor = true;
+            this.txt_dienthoaiKH.Location = new System.Drawing.Point(160, 74);
+            this.txt_dienthoaiKH.Name = "txt_dienthoaiKH";
+            this.txt_dienthoaiKH.Size = new System.Drawing.Size(176, 22);
+            this.txt_dienthoaiKH.TabIndex = 5;
             // 
-            // label6
+            // label5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 394);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 17);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Số Điện Thoại Khách Hàng :";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(414, 156);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 17);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Giới Tính";
             // 
-            // btn_themKH
+            // label4
             // 
-            this.btn_themKH.Location = new System.Drawing.Point(35, 478);
-            this.btn_themKH.Name = "btn_themKH";
-            this.btn_themKH.Size = new System.Drawing.Size(75, 23);
-            this.btn_themKH.TabIndex = 14;
-            this.btn_themKH.Text = "Thêm";
-            this.btn_themKH.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(414, 79);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Địa Chỉ";
             // 
-            // btn_xoaKH
+            // label3
             // 
-            this.btn_xoaKH.Location = new System.Drawing.Point(137, 478);
-            this.btn_xoaKH.Name = "btn_xoaKH";
-            this.btn_xoaKH.Size = new System.Drawing.Size(75, 23);
-            this.btn_xoaKH.TabIndex = 15;
-            this.btn_xoaKH.Text = "Xóa";
-            this.btn_xoaKH.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 156);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Họ Và Tên";
             // 
-            // btn_luuKH
+            // label2
             // 
-            this.btn_luuKH.Location = new System.Drawing.Point(344, 478);
-            this.btn_luuKH.Name = "btn_luuKH";
-            this.btn_luuKH.Size = new System.Drawing.Size(75, 23);
-            this.btn_luuKH.TabIndex = 16;
-            this.btn_luuKH.Text = "Lưu";
-            this.btn_luuKH.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(31, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Điện Thoại";
             // 
-            // btn_suaKH
+            // label1
             // 
-            this.btn_suaKH.Location = new System.Drawing.Point(237, 478);
-            this.btn_suaKH.Name = "btn_suaKH";
-            this.btn_suaKH.Size = new System.Drawing.Size(75, 23);
-            this.btn_suaKH.TabIndex = 17;
-            this.btn_suaKH.Text = "Sửa";
-            this.btn_suaKH.UseVisualStyleBackColor = true;
-            // 
-            // btn_boquaKH
-            // 
-            this.btn_boquaKH.Location = new System.Drawing.Point(447, 478);
-            this.btn_boquaKH.Name = "btn_boquaKH";
-            this.btn_boquaKH.Size = new System.Drawing.Size(75, 23);
-            this.btn_boquaKH.TabIndex = 18;
-            this.btn_boquaKH.Text = "Bỏ Qua";
-            this.btn_boquaKH.UseVisualStyleBackColor = true;
-            // 
-            // btn_danhsachKH
-            // 
-            this.btn_danhsachKH.Location = new System.Drawing.Point(546, 478);
-            this.btn_danhsachKH.Name = "btn_danhsachKH";
-            this.btn_danhsachKH.Size = new System.Drawing.Size(96, 23);
-            this.btn_danhsachKH.TabIndex = 19;
-            this.btn_danhsachKH.Text = "Danh Sách";
-            this.btn_danhsachKH.UseVisualStyleBackColor = true;
-            // 
-            // btn_dongKH
-            // 
-            this.btn_dongKH.Location = new System.Drawing.Point(664, 478);
-            this.btn_dongKH.Name = "btn_dongKH";
-            this.btn_dongKH.Size = new System.Drawing.Size(75, 23);
-            this.btn_dongKH.TabIndex = 20;
-            this.btn_dongKH.Text = "Đóng";
-            this.btn_dongKH.UseVisualStyleBackColor = true;
-            // 
-            // RTB_DiachiKH
-            // 
-            this.RTB_DiachiKH.Location = new System.Drawing.Point(509, 79);
-            this.RTB_DiachiKH.Name = "RTB_DiachiKH";
-            this.RTB_DiachiKH.Size = new System.Drawing.Size(202, 59);
-            this.RTB_DiachiKH.TabIndex = 21;
-            this.RTB_DiachiKH.Text = "";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(249, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(197, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Khách Hàng";
             // 
             // Khách_Hàng
             // 

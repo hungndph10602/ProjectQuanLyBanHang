@@ -107,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Sản Phẩm.resx">
       <DependentUpon>Sản Phẩm.cs</DependentUpon>
@@ -132,6 +133,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+    <None Include="Resources\checklists.png" />
+    <None Include="Resources\right-arrow.png" />
+    <None Include="Resources\diskette.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

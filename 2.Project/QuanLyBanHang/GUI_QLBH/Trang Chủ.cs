@@ -47,5 +47,68 @@ namespace GUI_QLBH
         {
             
         }
+        public void createprofie()
+        {
+            Hồ_Sơ_Nhân_Viên profile = new Hồ_Sơ_Nhân_Viên();
+            profile.WindowState = FormWindowState.Maximized;
+            profile.MdiParent = this;
+            profile.Show();
+        }
+        private void hồSơNhânViênCtrlHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            createprofie();
+        }
+
+        private void thoátAltF4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult h = MessageBox.Show
+               ("Bạn có chắc chắn muốn thoát không?", "Exit", MessageBoxButtons.YesNo);
+            if (h == DialogResult.Yes)
+                Application.Exit();
+        }
+        public void createproduct()
+        {
+            Sản_Phẩm product = new Sản_Phẩm();
+            product.WindowState = FormWindowState.Maximized;
+            product.MdiParent = this;
+            product.Show();
+        }
+        private void sảnPhẩmAltSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            createproduct();
+        }
+        public void createstaff()
+        {
+            Nhân_Viên staff = new Nhân_Viên();
+            staff.WindowState = FormWindowState.Maximized;
+            staff.MdiParent = this;
+            staff.Show();
+        }
+        private void nhânViênAltNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            createstaff();
+        }
+        public void createcustomer()
+        {
+            Khách_Hàng customer = new Khách_Hàng();
+            customer.WindowState = FormWindowState.Maximized;
+            customer.MdiParent = this;
+            customer.Show();
+        }
+        private void kháchHàngAltKToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            createcustomer();
+        }
+        public void createthongke()
+        {
+            Thống_Kê_Sản_Phẩm thongke = new Thống_Kê_Sản_Phẩm();
+            thongke.WindowState = FormWindowState.Maximized;
+            thongke.MdiParent = this;
+            thongke.Show();
+        }
+        private void thốngKêSảnPhẩmAltPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            createthongke();
+        }
     }
 }

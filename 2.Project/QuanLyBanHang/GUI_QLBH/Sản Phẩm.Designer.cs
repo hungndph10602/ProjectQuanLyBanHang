@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sản_Phẩm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_DongSP = new System.Windows.Forms.Button();
             this.btn_danhsach = new System.Windows.Forms.Button();
@@ -41,7 +42,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.btn_MoHinh = new System.Windows.Forms.Button();
+            this.btn_taihinh = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_giaban = new System.Windows.Forms.TextBox();
@@ -74,7 +75,7 @@
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.richTextBox1);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.btn_MoHinh);
+            this.groupBox1.Controls.Add(this.btn_taihinh);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_giaban);
@@ -97,79 +98,79 @@
             // 
             // btn_DongSP
             // 
-            this.btn_DongSP.Location = new System.Drawing.Point(671, 590);
+            this.btn_DongSP.Image = ((System.Drawing.Image)(resources.GetObject("btn_DongSP.Image")));
+            this.btn_DongSP.Location = new System.Drawing.Point(671, 564);
             this.btn_DongSP.Name = "btn_DongSP";
-            this.btn_DongSP.Size = new System.Drawing.Size(75, 23);
+            this.btn_DongSP.Size = new System.Drawing.Size(75, 59);
             this.btn_DongSP.TabIndex = 25;
-            this.btn_DongSP.Text = "Đóng";
             this.btn_DongSP.UseVisualStyleBackColor = true;
             // 
             // btn_danhsach
             // 
-            this.btn_danhsach.Location = new System.Drawing.Point(566, 590);
+            this.btn_danhsach.Image = ((System.Drawing.Image)(resources.GetObject("btn_danhsach.Image")));
+            this.btn_danhsach.Location = new System.Drawing.Point(566, 564);
             this.btn_danhsach.Name = "btn_danhsach";
-            this.btn_danhsach.Size = new System.Drawing.Size(86, 23);
+            this.btn_danhsach.Size = new System.Drawing.Size(72, 59);
             this.btn_danhsach.TabIndex = 24;
-            this.btn_danhsach.Text = "Danh Sách";
             this.btn_danhsach.UseVisualStyleBackColor = true;
             // 
             // btn_skip
             // 
-            this.btn_skip.Location = new System.Drawing.Point(458, 590);
+            this.btn_skip.Image = ((System.Drawing.Image)(resources.GetObject("btn_skip.Image")));
+            this.btn_skip.Location = new System.Drawing.Point(454, 572);
             this.btn_skip.Name = "btn_skip";
-            this.btn_skip.Size = new System.Drawing.Size(75, 23);
+            this.btn_skip.Size = new System.Drawing.Size(64, 51);
             this.btn_skip.TabIndex = 23;
-            this.btn_skip.Text = "Bỏ Qua";
             this.btn_skip.UseVisualStyleBackColor = true;
             // 
             // btn_luuSP
             // 
-            this.btn_luuSP.Location = new System.Drawing.Point(345, 590);
+            this.btn_luuSP.Image = ((System.Drawing.Image)(resources.GetObject("btn_luuSP.Image")));
+            this.btn_luuSP.Location = new System.Drawing.Point(349, 572);
             this.btn_luuSP.Name = "btn_luuSP";
-            this.btn_luuSP.Size = new System.Drawing.Size(75, 23);
+            this.btn_luuSP.Size = new System.Drawing.Size(57, 51);
             this.btn_luuSP.TabIndex = 22;
-            this.btn_luuSP.Text = "Lưu";
             this.btn_luuSP.UseVisualStyleBackColor = true;
             // 
             // btn_sua
             // 
-            this.btn_sua.Location = new System.Drawing.Point(234, 590);
+            this.btn_sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_sua.Image")));
+            this.btn_sua.Location = new System.Drawing.Point(234, 572);
             this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(75, 23);
+            this.btn_sua.Size = new System.Drawing.Size(61, 51);
             this.btn_sua.TabIndex = 21;
-            this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
             // 
             // btn_xoaSP
             // 
-            this.btn_xoaSP.Location = new System.Drawing.Point(121, 590);
+            this.btn_xoaSP.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoaSP.Image")));
+            this.btn_xoaSP.Location = new System.Drawing.Point(123, 572);
             this.btn_xoaSP.Name = "btn_xoaSP";
-            this.btn_xoaSP.Size = new System.Drawing.Size(75, 23);
+            this.btn_xoaSP.Size = new System.Drawing.Size(58, 51);
             this.btn_xoaSP.TabIndex = 20;
-            this.btn_xoaSP.Text = "Xóa";
             this.btn_xoaSP.UseVisualStyleBackColor = true;
             // 
             // btl_themSP
             // 
-            this.btl_themSP.Location = new System.Drawing.Point(10, 590);
+            this.btl_themSP.Image = ((System.Drawing.Image)(resources.GetObject("btl_themSP.Image")));
+            this.btl_themSP.Location = new System.Drawing.Point(10, 564);
             this.btl_themSP.Name = "btl_themSP";
-            this.btl_themSP.Size = new System.Drawing.Size(75, 23);
+            this.btl_themSP.Size = new System.Drawing.Size(47, 59);
             this.btl_themSP.TabIndex = 19;
-            this.btl_themSP.Text = "Thêm";
             this.btl_themSP.UseVisualStyleBackColor = true;
             // 
             // btn_timkiem
             // 
-            this.btn_timkiem.Location = new System.Drawing.Point(386, 528);
+            this.btn_timkiem.Image = ((System.Drawing.Image)(resources.GetObject("btn_timkiem.Image")));
+            this.btn_timkiem.Location = new System.Drawing.Point(400, 528);
             this.btn_timkiem.Name = "btn_timkiem";
-            this.btn_timkiem.Size = new System.Drawing.Size(75, 23);
+            this.btn_timkiem.Size = new System.Drawing.Size(61, 41);
             this.btn_timkiem.TabIndex = 18;
-            this.btn_timkiem.Text = "Tìm Kiếm";
             this.btn_timkiem.UseVisualStyleBackColor = true;
             // 
             // txt_MSP
             // 
-            this.txt_MSP.Location = new System.Drawing.Point(155, 529);
+            this.txt_MSP.Location = new System.Drawing.Point(155, 528);
             this.txt_MSP.Name = "txt_MSP";
             this.txt_MSP.Size = new System.Drawing.Size(177, 22);
             this.txt_MSP.TabIndex = 17;
@@ -202,14 +203,14 @@
             this.label8.Text = "Ghi Chú";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // btn_MoHinh
+            // btn_taihinh
             // 
-            this.btn_MoHinh.Location = new System.Drawing.Point(671, 67);
-            this.btn_MoHinh.Name = "btn_MoHinh";
-            this.btn_MoHinh.Size = new System.Drawing.Size(75, 23);
-            this.btn_MoHinh.TabIndex = 13;
-            this.btn_MoHinh.Text = "Tải Hình";
-            this.btn_MoHinh.UseVisualStyleBackColor = true;
+            this.btn_taihinh.Image = ((System.Drawing.Image)(resources.GetObject("btn_taihinh.Image")));
+            this.btn_taihinh.Location = new System.Drawing.Point(671, 67);
+            this.btn_taihinh.Name = "btn_taihinh";
+            this.btn_taihinh.Size = new System.Drawing.Size(49, 55);
+            this.btn_taihinh.TabIndex = 13;
+            this.btn_taihinh.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -338,7 +339,7 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btn_MoHinh;
+        private System.Windows.Forms.Button btn_taihinh;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_giaban;

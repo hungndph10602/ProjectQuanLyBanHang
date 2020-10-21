@@ -54,9 +54,15 @@
     <Compile Include="CTHD.cs" />
     <Compile Include="HoaDon.cs" />
     <Compile Include="KhachHang.cs" />
+<<<<<<< HEAD
     <Compile Include="Migrations\202010210524510_create-db.cs" />
     <Compile Include="Migrations\202010210524510_create-db.designer.cs">
       <DependentUpon>202010210524510_create-db.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\202010210520066_create-db.cs" />
+    <Compile Include="Migrations\202010210520066_create-db.Designer.cs">
+      <DependentUpon>202010210520066_create-db.cs</DependentUpon>
+>>>>>>> 714e24613fbfa6463107698dd713d18e41f46881
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NhanVien.cs" />
@@ -69,8 +75,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\202010210524510_create-db.resx">
       <DependentUpon>202010210524510_create-db.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\202010210520066_create-db.resx">
+      <DependentUpon>202010210520066_create-db.cs</DependentUpon>
+>>>>>>> 714e24613fbfa6463107698dd713d18e41f46881
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

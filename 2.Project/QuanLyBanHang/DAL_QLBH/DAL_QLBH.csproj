@@ -41,10 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="Class1.cs" />
-=======
->>>>>>> d3b2e994426f23790201797ade0ae8e1e45f3eba
     <Compile Include="DAL_HOADON.cs" />
     <Compile Include="DAL_KHACHHANG.cs" />
     <Compile Include="DAL_NHANVIEN.cs" />

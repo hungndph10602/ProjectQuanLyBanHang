@@ -45,10 +45,6 @@
     <Compile Include="BUS_KHACHHANG.cs" />
     <Compile Include="BUS_NHANVIEN.cs" />
     <Compile Include="BUS_SANPHAM.cs" />
-<<<<<<< HEAD
-    <Compile Include="Class1.cs" />
-=======
->>>>>>> d3b2e994426f23790201797ade0ae8e1e45f3eba
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -29,21 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_tennvTimKiem = new System.Windows.Forms.TextBox();
-            this.dataGridView_NhanVien = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.radio_NgungHoatDong = new System.Windows.Forms.RadioButton();
             this.Radio_HoatDong = new System.Windows.Forms.RadioButton();
-            this.RTB_DiaChi = new System.Windows.Forms.RichTextBox();
-            this.radio_quanli = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.radio_nhanvien = new System.Windows.Forms.RadioButton();
-            this.txt_tenNV = new System.Windows.Forms.TextBox();
-            this.txt_emailNV = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.radio_quanli = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
             this.btn_dongNV = new System.Windows.Forms.Button();
             this.btn_danhsachNV = new System.Windows.Forms.Button();
             this.btn_boquaNV = new System.Windows.Forms.Button();
@@ -52,12 +44,28 @@
             this.btn_xoaNV = new System.Windows.Forms.Button();
             this.btn_themNV = new System.Windows.Forms.Button();
             this.txt_timkiemNV = new System.Windows.Forms.Button();
+            this.txt_tennvTimKiem = new System.Windows.Forms.TextBox();
+            this.dataGridView_NhanVien = new System.Windows.Forms.DataGridView();
+            this.RTB_DiaChi = new System.Windows.Forms.RichTextBox();
+            this.txt_tenNV = new System.Windows.Forms.TextBox();
+            this.txt_emailNV = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.btn_dongNV);
             this.groupBox1.Controls.Add(this.btn_danhsachNV);
             this.groupBox1.Controls.Add(this.btn_boquaNV);
@@ -68,11 +76,7 @@
             this.groupBox1.Controls.Add(this.txt_timkiemNV);
             this.groupBox1.Controls.Add(this.txt_tennvTimKiem);
             this.groupBox1.Controls.Add(this.dataGridView_NhanVien);
-            this.groupBox1.Controls.Add(this.radio_NgungHoatDong);
-            this.groupBox1.Controls.Add(this.Radio_HoatDong);
             this.groupBox1.Controls.Add(this.RTB_DiaChi);
-            this.groupBox1.Controls.Add(this.radio_quanli);
-            this.groupBox1.Controls.Add(this.radio_nhanvien);
             this.groupBox1.Controls.Add(this.txt_tenNV);
             this.groupBox1.Controls.Add(this.txt_emailNV);
             this.groupBox1.Controls.Add(this.label6);
@@ -87,6 +91,152 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhân Viên";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.radio_NgungHoatDong);
+            this.panel2.Controls.Add(this.Radio_HoatDong);
+            this.panel2.Location = new System.Drawing.Point(485, 166);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(290, 52);
+            this.panel2.TabIndex = 29;
+            // 
+            // radio_NgungHoatDong
+            // 
+            this.radio_NgungHoatDong.AutoSize = true;
+            this.radio_NgungHoatDong.Location = new System.Drawing.Point(147, 3);
+            this.radio_NgungHoatDong.Name = "radio_NgungHoatDong";
+            this.radio_NgungHoatDong.Size = new System.Drawing.Size(143, 21);
+            this.radio_NgungHoatDong.TabIndex = 10;
+            this.radio_NgungHoatDong.TabStop = true;
+            this.radio_NgungHoatDong.Text = "Ngừng Hoạt Động";
+            this.radio_NgungHoatDong.UseVisualStyleBackColor = true;
+            // 
+            // Radio_HoatDong
+            // 
+            this.Radio_HoatDong.AutoSize = true;
+            this.Radio_HoatDong.Location = new System.Drawing.Point(10, 5);
+            this.Radio_HoatDong.Name = "Radio_HoatDong";
+            this.Radio_HoatDong.Size = new System.Drawing.Size(97, 21);
+            this.Radio_HoatDong.TabIndex = 9;
+            this.Radio_HoatDong.TabStop = true;
+            this.Radio_HoatDong.Text = "Hoạt Động";
+            this.Radio_HoatDong.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.radio_nhanvien);
+            this.panel1.Controls.Add(this.radio_quanli);
+            this.panel1.Location = new System.Drawing.Point(133, 166);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(246, 47);
+            this.panel1.TabIndex = 28;
+            // 
+            // radio_nhanvien
+            // 
+            this.radio_nhanvien.AutoSize = true;
+            this.radio_nhanvien.Location = new System.Drawing.Point(9, 3);
+            this.radio_nhanvien.Name = "radio_nhanvien";
+            this.radio_nhanvien.Size = new System.Drawing.Size(95, 21);
+            this.radio_nhanvien.TabIndex = 5;
+            this.radio_nhanvien.TabStop = true;
+            this.radio_nhanvien.Text = "Nhân Viên";
+            this.radio_nhanvien.UseVisualStyleBackColor = true;
+            // 
+            // radio_quanli
+            // 
+            this.radio_quanli.AutoSize = true;
+            this.radio_quanli.Location = new System.Drawing.Point(133, 3);
+            this.radio_quanli.Name = "radio_quanli";
+            this.radio_quanli.Size = new System.Drawing.Size(79, 21);
+            this.radio_quanli.TabIndex = 8;
+            this.radio_quanli.TabStop = true;
+            this.radio_quanli.Text = "Quản Lí";
+            this.radio_quanli.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 424);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(154, 17);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Nhập Email nhân viên :";
+            // 
+            // btn_dongNV
+            // 
+            this.btn_dongNV.Image = global::GUI_QLBH.Properties.Resources.close;
+            this.btn_dongNV.Location = new System.Drawing.Point(685, 468);
+            this.btn_dongNV.Name = "btn_dongNV";
+            this.btn_dongNV.Size = new System.Drawing.Size(75, 58);
+            this.btn_dongNV.TabIndex = 26;
+            this.btn_dongNV.UseVisualStyleBackColor = true;
+            // 
+            // btn_danhsachNV
+            // 
+            this.btn_danhsachNV.Image = global::GUI_QLBH.Properties.Resources.checklists;
+            this.btn_danhsachNV.Location = new System.Drawing.Point(574, 468);
+            this.btn_danhsachNV.Name = "btn_danhsachNV";
+            this.btn_danhsachNV.Size = new System.Drawing.Size(67, 58);
+            this.btn_danhsachNV.TabIndex = 25;
+            this.btn_danhsachNV.UseVisualStyleBackColor = true;
+            // 
+            // btn_boquaNV
+            // 
+            this.btn_boquaNV.Image = global::GUI_QLBH.Properties.Resources.right_arrow;
+            this.btn_boquaNV.Location = new System.Drawing.Point(464, 468);
+            this.btn_boquaNV.Name = "btn_boquaNV";
+            this.btn_boquaNV.Size = new System.Drawing.Size(60, 58);
+            this.btn_boquaNV.TabIndex = 24;
+            this.btn_boquaNV.UseVisualStyleBackColor = true;
+            // 
+            // btn_luuNV
+            // 
+            this.btn_luuNV.Image = global::GUI_QLBH.Properties.Resources.diskette;
+            this.btn_luuNV.Location = new System.Drawing.Point(355, 468);
+            this.btn_luuNV.Name = "btn_luuNV";
+            this.btn_luuNV.Size = new System.Drawing.Size(64, 58);
+            this.btn_luuNV.TabIndex = 23;
+            this.btn_luuNV.UseVisualStyleBackColor = true;
+            this.btn_luuNV.Click += new System.EventHandler(this.btn_luuNV_Click);
+            // 
+            // btn_suaNV
+            // 
+            this.btn_suaNV.Image = global::GUI_QLBH.Properties.Resources.edit;
+            this.btn_suaNV.Location = new System.Drawing.Point(234, 468);
+            this.btn_suaNV.Name = "btn_suaNV";
+            this.btn_suaNV.Size = new System.Drawing.Size(75, 58);
+            this.btn_suaNV.TabIndex = 22;
+            this.btn_suaNV.UseVisualStyleBackColor = true;
+            // 
+            // btn_xoaNV
+            // 
+            this.btn_xoaNV.Image = global::GUI_QLBH.Properties.Resources.trash;
+            this.btn_xoaNV.Location = new System.Drawing.Point(124, 468);
+            this.btn_xoaNV.Name = "btn_xoaNV";
+            this.btn_xoaNV.Size = new System.Drawing.Size(70, 58);
+            this.btn_xoaNV.TabIndex = 21;
+            this.btn_xoaNV.UseVisualStyleBackColor = true;
+            // 
+            // btn_themNV
+            // 
+            this.btn_themNV.Image = global::GUI_QLBH.Properties.Resources.plus;
+            this.btn_themNV.Location = new System.Drawing.Point(10, 468);
+            this.btn_themNV.Name = "btn_themNV";
+            this.btn_themNV.Size = new System.Drawing.Size(69, 58);
+            this.btn_themNV.TabIndex = 1;
+            this.btn_themNV.UseVisualStyleBackColor = true;
+            this.btn_themNV.Click += new System.EventHandler(this.btn_themNV_Click);
+            // 
+            // txt_timkiemNV
+            // 
+            this.txt_timkiemNV.Image = global::GUI_QLBH.Properties.Resources.search;
+            this.txt_timkiemNV.Location = new System.Drawing.Point(393, 409);
+            this.txt_timkiemNV.Name = "txt_timkiemNV";
+            this.txt_timkiemNV.Size = new System.Drawing.Size(70, 53);
+            this.txt_timkiemNV.TabIndex = 19;
+            this.txt_timkiemNV.UseVisualStyleBackColor = true;
+            this.txt_timkiemNV.Click += new System.EventHandler(this.txt_timkiemNV_Click);
             // 
             // txt_tennvTimKiem
             // 
@@ -104,72 +254,32 @@
             this.dataGridView_NhanVien.RowTemplate.Height = 24;
             this.dataGridView_NhanVien.Size = new System.Drawing.Size(750, 184);
             this.dataGridView_NhanVien.TabIndex = 17;
-            // 
-            // radio_NgungHoatDong
-            // 
-            this.radio_NgungHoatDong.AutoSize = true;
-            this.radio_NgungHoatDong.Location = new System.Drawing.Point(617, 176);
-            this.radio_NgungHoatDong.Name = "radio_NgungHoatDong";
-            this.radio_NgungHoatDong.Size = new System.Drawing.Size(143, 21);
-            this.radio_NgungHoatDong.TabIndex = 16;
-            this.radio_NgungHoatDong.TabStop = true;
-            this.radio_NgungHoatDong.Text = "Ngừng Hoạt Động";
-            this.radio_NgungHoatDong.UseVisualStyleBackColor = true;
-            // 
-            // Radio_HoatDong
-            // 
-            this.Radio_HoatDong.AutoSize = true;
-            this.Radio_HoatDong.Location = new System.Drawing.Point(480, 178);
-            this.Radio_HoatDong.Name = "Radio_HoatDong";
-            this.Radio_HoatDong.Size = new System.Drawing.Size(97, 21);
-            this.Radio_HoatDong.TabIndex = 15;
-            this.Radio_HoatDong.TabStop = true;
-            this.Radio_HoatDong.Text = "Hoạt Động";
-            this.Radio_HoatDong.UseVisualStyleBackColor = true;
+            this.dataGridView_NhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_NhanVien_CellContentClick);
             // 
             // RTB_DiaChi
             // 
             this.RTB_DiaChi.Location = new System.Drawing.Point(480, 69);
             this.RTB_DiaChi.Name = "RTB_DiaChi";
             this.RTB_DiaChi.Size = new System.Drawing.Size(280, 74);
-            this.RTB_DiaChi.TabIndex = 14;
+            this.RTB_DiaChi.TabIndex = 4;
             this.RTB_DiaChi.Text = "";
-            // 
-            // radio_quanli
-            // 
-            this.radio_quanli.AutoSize = true;
-            this.radio_quanli.Location = new System.Drawing.Point(257, 178);
-            this.radio_quanli.Name = "radio_quanli";
-            this.radio_quanli.Size = new System.Drawing.Size(79, 21);
-            this.radio_quanli.TabIndex = 13;
-            this.radio_quanli.TabStop = true;
-            this.radio_quanli.Text = "Quản Lí";
-            this.radio_quanli.UseVisualStyleBackColor = true;
-            // 
-            // radio_nhanvien
-            // 
-            this.radio_nhanvien.AutoSize = true;
-            this.radio_nhanvien.Location = new System.Drawing.Point(133, 178);
-            this.radio_nhanvien.Name = "radio_nhanvien";
-            this.radio_nhanvien.Size = new System.Drawing.Size(95, 21);
-            this.radio_nhanvien.TabIndex = 12;
-            this.radio_nhanvien.TabStop = true;
-            this.radio_nhanvien.Text = "Nhân Viên";
-            this.radio_nhanvien.UseVisualStyleBackColor = true;
+            this.RTB_DiaChi.Leave += new System.EventHandler(this.RTB_DiaChi_TextChanged);
             // 
             // txt_tenNV
             // 
             this.txt_tenNV.Location = new System.Drawing.Point(133, 121);
             this.txt_tenNV.Name = "txt_tenNV";
             this.txt_tenNV.Size = new System.Drawing.Size(219, 22);
-            this.txt_tenNV.TabIndex = 11;
+            this.txt_tenNV.TabIndex = 3;
+            this.txt_tenNV.Leave += new System.EventHandler(this.txt_tenNV_TextChanged);
             // 
             // txt_emailNV
             // 
             this.txt_emailNV.Location = new System.Drawing.Point(133, 69);
             this.txt_emailNV.Name = "txt_emailNV";
             this.txt_emailNV.Size = new System.Drawing.Size(219, 22);
-            this.txt_emailNV.TabIndex = 10;
+            this.txt_emailNV.TabIndex = 2;
+            this.txt_emailNV.Leave += new System.EventHandler(this.txt_emailNV_TextChanged);
             // 
             // label6
             // 
@@ -226,78 +336,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhân Viên";
             // 
-            // btn_dongNV
-            // 
-            this.btn_dongNV.Image = global::GUI_QLBH.Properties.Resources.close;
-            this.btn_dongNV.Location = new System.Drawing.Point(685, 468);
-            this.btn_dongNV.Name = "btn_dongNV";
-            this.btn_dongNV.Size = new System.Drawing.Size(75, 42);
-            this.btn_dongNV.TabIndex = 26;
-            this.btn_dongNV.UseVisualStyleBackColor = true;
-            // 
-            // btn_danhsachNV
-            // 
-            this.btn_danhsachNV.Image = global::GUI_QLBH.Properties.Resources.checklists;
-            this.btn_danhsachNV.Location = new System.Drawing.Point(574, 468);
-            this.btn_danhsachNV.Name = "btn_danhsachNV";
-            this.btn_danhsachNV.Size = new System.Drawing.Size(67, 42);
-            this.btn_danhsachNV.TabIndex = 25;
-            this.btn_danhsachNV.UseVisualStyleBackColor = true;
-            // 
-            // btn_boquaNV
-            // 
-            this.btn_boquaNV.Image = global::GUI_QLBH.Properties.Resources.right_arrow;
-            this.btn_boquaNV.Location = new System.Drawing.Point(464, 468);
-            this.btn_boquaNV.Name = "btn_boquaNV";
-            this.btn_boquaNV.Size = new System.Drawing.Size(60, 42);
-            this.btn_boquaNV.TabIndex = 24;
-            this.btn_boquaNV.UseVisualStyleBackColor = true;
-            // 
-            // btn_luuNV
-            // 
-            this.btn_luuNV.Image = global::GUI_QLBH.Properties.Resources.diskette;
-            this.btn_luuNV.Location = new System.Drawing.Point(355, 468);
-            this.btn_luuNV.Name = "btn_luuNV";
-            this.btn_luuNV.Size = new System.Drawing.Size(64, 42);
-            this.btn_luuNV.TabIndex = 23;
-            this.btn_luuNV.UseVisualStyleBackColor = true;
-            // 
-            // btn_suaNV
-            // 
-            this.btn_suaNV.Image = global::GUI_QLBH.Properties.Resources.edit;
-            this.btn_suaNV.Location = new System.Drawing.Point(234, 468);
-            this.btn_suaNV.Name = "btn_suaNV";
-            this.btn_suaNV.Size = new System.Drawing.Size(68, 42);
-            this.btn_suaNV.TabIndex = 22;
-            this.btn_suaNV.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoaNV
-            // 
-            this.btn_xoaNV.Image = global::GUI_QLBH.Properties.Resources.trash;
-            this.btn_xoaNV.Location = new System.Drawing.Point(124, 468);
-            this.btn_xoaNV.Name = "btn_xoaNV";
-            this.btn_xoaNV.Size = new System.Drawing.Size(63, 42);
-            this.btn_xoaNV.TabIndex = 21;
-            this.btn_xoaNV.UseVisualStyleBackColor = true;
-            // 
-            // btn_themNV
-            // 
-            this.btn_themNV.Image = global::GUI_QLBH.Properties.Resources.plus;
-            this.btn_themNV.Location = new System.Drawing.Point(10, 468);
-            this.btn_themNV.Name = "btn_themNV";
-            this.btn_themNV.Size = new System.Drawing.Size(62, 42);
-            this.btn_themNV.TabIndex = 20;
-            this.btn_themNV.UseVisualStyleBackColor = true;
-            // 
-            // txt_timkiemNV
-            // 
-            this.txt_timkiemNV.Image = global::GUI_QLBH.Properties.Resources.search;
-            this.txt_timkiemNV.Location = new System.Drawing.Point(393, 420);
-            this.txt_timkiemNV.Name = "txt_timkiemNV";
-            this.txt_timkiemNV.Size = new System.Drawing.Size(70, 42);
-            this.txt_timkiemNV.TabIndex = 19;
-            this.txt_timkiemNV.UseVisualStyleBackColor = true;
-            // 
             // Nhân_Viên
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -306,8 +344,13 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Nhân_Viên";
             this.Text = "Nhân_Viên";
+            this.Load += new System.EventHandler(this.Nhân_Viên_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NhanVien)).EndInit();
             this.ResumeLayout(false);
 
@@ -339,5 +382,8 @@
         private System.Windows.Forms.Button btn_xoaNV;
         private System.Windows.Forms.Button btn_themNV;
         private System.Windows.Forms.Button txt_timkiemNV;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

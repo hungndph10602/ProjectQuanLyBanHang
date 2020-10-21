@@ -8,5 +8,6 @@ namespace BUS_QLBH
 {
     class BUS_KHACHHANG
     {
+
     }
 }

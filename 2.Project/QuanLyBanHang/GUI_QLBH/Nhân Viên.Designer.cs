@@ -55,6 +55,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker_ngaysinhNV = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -63,6 +65,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dateTimePicker_ngaysinhNV);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.label7);
@@ -96,7 +100,7 @@
             // 
             this.panel2.Controls.Add(this.radio_NgungHoatDong);
             this.panel2.Controls.Add(this.Radio_HoatDong);
-            this.panel2.Location = new System.Drawing.Point(485, 166);
+            this.panel2.Location = new System.Drawing.Point(480, 206);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(290, 52);
             this.panel2.TabIndex = 29;
@@ -127,7 +131,7 @@
             // 
             this.panel1.Controls.Add(this.radio_nhanvien);
             this.panel1.Controls.Add(this.radio_quanli);
-            this.panel1.Location = new System.Drawing.Point(133, 166);
+            this.panel1.Location = new System.Drawing.Point(133, 211);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 47);
             this.panel1.TabIndex = 28;
@@ -248,11 +252,11 @@
             // dataGridView_NhanVien
             // 
             this.dataGridView_NhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_NhanVien.Location = new System.Drawing.Point(10, 219);
+            this.dataGridView_NhanVien.Location = new System.Drawing.Point(10, 264);
             this.dataGridView_NhanVien.Name = "dataGridView_NhanVien";
             this.dataGridView_NhanVien.RowHeadersWidth = 51;
             this.dataGridView_NhanVien.RowTemplate.Height = 24;
-            this.dataGridView_NhanVien.Size = new System.Drawing.Size(750, 184);
+            this.dataGridView_NhanVien.Size = new System.Drawing.Size(750, 144);
             this.dataGridView_NhanVien.TabIndex = 17;
             this.dataGridView_NhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_NhanVien_CellContentClick);
             // 
@@ -260,7 +264,7 @@
             // 
             this.RTB_DiaChi.Location = new System.Drawing.Point(480, 69);
             this.RTB_DiaChi.Name = "RTB_DiaChi";
-            this.RTB_DiaChi.Size = new System.Drawing.Size(280, 74);
+            this.RTB_DiaChi.Size = new System.Drawing.Size(280, 131);
             this.RTB_DiaChi.TabIndex = 4;
             this.RTB_DiaChi.Text = "";
             this.RTB_DiaChi.Leave += new System.EventHandler(this.RTB_DiaChi_TextChanged);
@@ -284,7 +288,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(385, 180);
+            this.label6.Location = new System.Drawing.Point(390, 218);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 17);
             this.label6.TabIndex = 5;
@@ -302,7 +306,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 178);
+            this.label4.Location = new System.Drawing.Point(6, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 17);
             this.label4.TabIndex = 3;
@@ -335,6 +339,24 @@
             this.label1.Size = new System.Drawing.Size(169, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhân Viên";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 169);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 17);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Ngày Sinh";
+            // 
+            // dateTimePicker_ngaysinhNV
+            // 
+            this.dateTimePicker_ngaysinhNV.CustomFormat = "MM/dd/yyyy";
+            this.dateTimePicker_ngaysinhNV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker_ngaysinhNV.Location = new System.Drawing.Point(133, 163);
+            this.dateTimePicker_ngaysinhNV.Name = "dateTimePicker_ngaysinhNV";
+            this.dateTimePicker_ngaysinhNV.Size = new System.Drawing.Size(219, 22);
+            this.dateTimePicker_ngaysinhNV.TabIndex = 31;
             // 
             // Nhân_Viên
             // 
@@ -385,5 +407,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_ngaysinhNV;
+        private System.Windows.Forms.Label label8;
     }
 }

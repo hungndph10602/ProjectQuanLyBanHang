@@ -10,81 +10,82 @@
             CreateTable(
                 "dbo.CTHDs",
                 c => new
-                {
-                    macthd = c.Int(nullable: false, identity: true),
-                    mshd = c.Int(nullable: false),
-                    mssp = c.Int(nullable: false),
-                    soluong = c.Int(nullable: false),
-                    gia = c.Double(nullable: false),
-                })
+                    {
+                        macthd = c.Int(nullable: false, identity: true),
+                        mshd = c.Int(nullable: false),
+                        mssp = c.Int(nullable: false),
+                        soluong = c.Int(nullable: false),
+                        gia = c.Double(nullable: false),
+                    })
                 .PrimaryKey(t => t.macthd)
                 .ForeignKey("dbo.HoaDons", t => t.mshd, cascadeDelete: true)
                 .Index(t => t.mshd);
-
+            
             CreateTable(
                 "dbo.HoaDons",
                 c => new
-                {
-                    mahd = c.Int(nullable: false, identity: true),
-                    mskh = c.Int(nullable: false),
-                    msnv = c.Int(nullable: false),
-                    ngaylap = c.DateTime(nullable: false),
-                })
+                    {
+                        mahd = c.Int(nullable: false, identity: true),
+                        mskh = c.Int(nullable: false),
+                        msnv = c.Int(nullable: false),
+                        ngaylap = c.DateTime(nullable: false),
+                    })
                 .PrimaryKey(t => t.mahd)
                 .ForeignKey("dbo.KhachHangs", t => t.mskh, cascadeDelete: true)
                 .ForeignKey("dbo.NhanViens", t => t.msnv, cascadeDelete: true)
                 .Index(t => t.mskh)
                 .Index(t => t.msnv);
-
+            
             CreateTable(
                 "dbo.KhachHangs",
                 c => new
-                {
-                    makh = c.Int(nullable: false, identity: true),
-                    tenkh = c.String(),
-                    diachi = c.String(),
-                    gioitinh = c.Boolean(nullable: false),
-                    khachhang_makh = c.Int(),
-                })
+                    {
+                        makh = c.Int(nullable: false, identity: true),
+                        tenkh = c.String(),
+                        diachi = c.String(),
+                        gioitinh = c.Boolean(nullable: false),
+                        khachhang_makh = c.Int(),
+                    })
                 .PrimaryKey(t => t.makh)
                 .ForeignKey("dbo.KhachHangs", t => t.khachhang_makh)
                 .Index(t => t.khachhang_makh);
-
+            
             CreateTable(
                 "dbo.NhanViens",
                 c => new
-                {
-                    manv = c.Int(nullable: false, identity: true),
-                    hoten = c.String(),
-                    ngaysinh = c.DateTime(nullable: false),
-                    diachi = c.String(),
-                    vaitro = c.String(),
-                    matkhau = c.String(),
-                    tinhtrang = c.String(),
-                    nhanvien_manv = c.Int(),
-                })
+                    {
+                        manv = c.Int(nullable: false, identity: true),
+                        hoten = c.String(),
+                        ngaysinh = c.DateTime(nullable: false),
+                        diachi = c.String(),
+                        vaitro = c.String(),
+                        matkhau = c.String(),
+                        tinhtrang = c.String(),
+                        nhanvien_manv = c.Int(),
+                    })
                 .PrimaryKey(t => t.manv)
                 .ForeignKey("dbo.NhanViens", t => t.nhanvien_manv)
                 .Index(t => t.nhanvien_manv);
-
+            
             CreateTable(
                 "dbo.SanPhams",
                 c => new
-                {
-                    masp = c.Int(nullable: false, identity: true),
-                    tensp = c.String(),
-                    soluong = c.Int(nullable: false),
-                    gianhap = c.Double(nullable: false),
-                    giaban = c.Double(nullable: false),
-                    hinhanh = c.String(),
-                    sanpham_masp = c.Int(),
-                    CTHD_macthd = c.Int(),
-                })
+                    {
+                        masp = c.Int(nullable: false, identity: true),
+                        tensp = c.String(),
+                        soluong = c.Int(nullable: false),
+                        gianhap = c.Double(nullable: false),
+                        giaban = c.Double(nullable: false),
+                        hinhanh = c.String(),
+                        sanpham_masp = c.Int(),
+                        CTHD_macthd = c.Int(),
+                    })
                 .PrimaryKey(t => t.masp)
                 .ForeignKey("dbo.SanPhams", t => t.sanpham_masp)
                 .ForeignKey("dbo.CTHDs", t => t.CTHD_macthd)
                 .Index(t => t.sanpham_masp)
                 .Index(t => t.CTHD_macthd);
+            
         }
         
         public override void Down()

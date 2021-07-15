@@ -89,8 +89,9 @@
             this.RTB_DiachiKH.Location = new System.Drawing.Point(509, 79);
             this.RTB_DiachiKH.Name = "RTB_DiachiKH";
             this.RTB_DiachiKH.Size = new System.Drawing.Size(202, 59);
-            this.RTB_DiachiKH.TabIndex = 21;
+            this.RTB_DiachiKH.TabIndex = 4;
             this.RTB_DiachiKH.Text = "";
+            this.RTB_DiachiKH.Leave += new System.EventHandler(this.RTB_DiachiKH_TextChanged);
             // 
             // btn_dongKH
             // 
@@ -124,7 +125,7 @@
             this.btn_suaKH.Image = global::GUI_QLBH.Properties.Resources.edit;
             this.btn_suaKH.Location = new System.Drawing.Point(237, 449);
             this.btn_suaKH.Name = "btn_suaKH";
-            this.btn_suaKH.Size = new System.Drawing.Size(64, 52);
+            this.btn_suaKH.Size = new System.Drawing.Size(71, 52);
             this.btn_suaKH.TabIndex = 17;
             this.btn_suaKH.UseVisualStyleBackColor = true;
             // 
@@ -136,13 +137,14 @@
             this.btn_luuKH.Size = new System.Drawing.Size(70, 52);
             this.btn_luuKH.TabIndex = 16;
             this.btn_luuKH.UseVisualStyleBackColor = true;
+            this.btn_luuKH.Click += new System.EventHandler(this.btn_luuKH_Click);
             // 
             // btn_xoaKH
             // 
             this.btn_xoaKH.Image = global::GUI_QLBH.Properties.Resources.trash;
             this.btn_xoaKH.Location = new System.Drawing.Point(137, 449);
             this.btn_xoaKH.Name = "btn_xoaKH";
-            this.btn_xoaKH.Size = new System.Drawing.Size(72, 52);
+            this.btn_xoaKH.Size = new System.Drawing.Size(75, 52);
             this.btn_xoaKH.TabIndex = 15;
             this.btn_xoaKH.UseVisualStyleBackColor = true;
             // 
@@ -151,9 +153,10 @@
             this.btn_themKH.Image = global::GUI_QLBH.Properties.Resources.plus;
             this.btn_themKH.Location = new System.Drawing.Point(35, 449);
             this.btn_themKH.Name = "btn_themKH";
-            this.btn_themKH.Size = new System.Drawing.Size(59, 52);
-            this.btn_themKH.TabIndex = 14;
+            this.btn_themKH.Size = new System.Drawing.Size(73, 52);
+            this.btn_themKH.TabIndex = 1;
             this.btn_themKH.UseVisualStyleBackColor = true;
+            this.btn_themKH.Click += new System.EventHandler(this.btn_themKH_Click);
             // 
             // label6
             // 
@@ -172,13 +175,14 @@
             this.btn_timkiemKH.Size = new System.Drawing.Size(51, 42);
             this.btn_timkiemKH.TabIndex = 12;
             this.btn_timkiemKH.UseVisualStyleBackColor = true;
+            this.btn_timkiemKH.Click += new System.EventHandler(this.btn_timkiemKH_Click);
             // 
             // txt_sdtKH
             // 
             this.txt_sdtKH.Location = new System.Drawing.Point(256, 391);
             this.txt_sdtKH.Name = "txt_sdtKH";
             this.txt_sdtKH.Size = new System.Drawing.Size(176, 22);
-            this.txt_sdtKH.TabIndex = 11;
+            this.txt_sdtKH.TabIndex = 7;
             // 
             // dataGridView1
             // 
@@ -196,7 +200,7 @@
             this.radio_NuKH.Location = new System.Drawing.Point(664, 154);
             this.radio_NuKH.Name = "radio_NuKH";
             this.radio_NuKH.Size = new System.Drawing.Size(47, 21);
-            this.radio_NuKH.TabIndex = 9;
+            this.radio_NuKH.TabIndex = 6;
             this.radio_NuKH.TabStop = true;
             this.radio_NuKH.Text = "Nữ";
             this.radio_NuKH.UseVisualStyleBackColor = true;
@@ -207,7 +211,7 @@
             this.radio_NamKH.Location = new System.Drawing.Point(522, 154);
             this.radio_NamKH.Name = "radio_NamKH";
             this.radio_NamKH.Size = new System.Drawing.Size(58, 21);
-            this.radio_NamKH.TabIndex = 8;
+            this.radio_NamKH.TabIndex = 5;
             this.radio_NamKH.TabStop = true;
             this.radio_NamKH.Text = "Nam";
             this.radio_NamKH.UseVisualStyleBackColor = true;
@@ -217,14 +221,16 @@
             this.txt_tenKH.Location = new System.Drawing.Point(160, 156);
             this.txt_tenKH.Name = "txt_tenKH";
             this.txt_tenKH.Size = new System.Drawing.Size(176, 22);
-            this.txt_tenKH.TabIndex = 6;
+            this.txt_tenKH.TabIndex = 3;
+            this.txt_tenKH.Leave += new System.EventHandler(this.txt_tenKH_TextChanged);
             // 
             // txt_dienthoaiKH
             // 
             this.txt_dienthoaiKH.Location = new System.Drawing.Point(160, 74);
             this.txt_dienthoaiKH.Name = "txt_dienthoaiKH";
             this.txt_dienthoaiKH.Size = new System.Drawing.Size(176, 22);
-            this.txt_dienthoaiKH.TabIndex = 5;
+            this.txt_dienthoaiKH.TabIndex = 2;
+            this.txt_dienthoaiKH.Leave += new System.EventHandler(this.txt_dienthoaiKH_TextChanged);
             // 
             // label5
             // 
@@ -280,6 +286,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Khách_Hàng";
             this.Text = "Khách_Hàng";
+            this.Load += new System.EventHandler(this.Khách_Hàng_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

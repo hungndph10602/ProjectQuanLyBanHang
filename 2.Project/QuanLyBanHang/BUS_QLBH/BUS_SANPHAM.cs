@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BUS_QLBH
 {
-    public class Class1
+    class BUS_SANPHAM
     {
     }
 }

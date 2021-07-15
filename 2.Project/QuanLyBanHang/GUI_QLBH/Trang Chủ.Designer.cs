@@ -43,6 +43,8 @@
             this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_xinchao = new System.Windows.Forms.Label();
             this.lbl_username = new System.Windows.Forms.Label();
+            this.hóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chiTiếtHóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,7 +110,8 @@
             this.danhMụcToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sảnPhẩmAltSToolStripMenuItem,
             this.nhânViênAltNToolStripMenuItem,
-            this.kháchHàngAltKToolStripMenuItem});
+            this.kháchHàngAltKToolStripMenuItem,
+            this.hóaĐơnToolStripMenuItem});
             this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
             this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.danhMụcToolStripMenuItem.Text = "Danh Mục";
@@ -176,6 +179,21 @@
             this.lbl_username.Size = new System.Drawing.Size(0, 17);
             this.lbl_username.TabIndex = 4;
             // 
+            // hóaĐơnToolStripMenuItem
+            // 
+            this.hóaĐơnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chiTiếtHóaĐơnToolStripMenuItem});
+            this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
+            this.hóaĐơnToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D)));
+            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.hóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
+            // 
+            // chiTiếtHóaĐơnToolStripMenuItem
+            // 
+            this.chiTiếtHóaĐơnToolStripMenuItem.Name = "chiTiếtHóaĐơnToolStripMenuItem";
+            this.chiTiếtHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.chiTiếtHóaĐơnToolStripMenuItem.Text = "Chi Tiết Hóa Đơn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -213,6 +231,8 @@
         private System.Windows.Forms.ToolStripMenuItem thốngKêSảnPhẩmAltPToolStripMenuItem;
         private System.Windows.Forms.Label lbl_xinchao;
         private System.Windows.Forms.Label lbl_username;
+        private System.Windows.Forms.ToolStripMenuItem hóaĐơnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chiTiếtHóaĐơnToolStripMenuItem;
     }
 }
 

@@ -16,5 +16,16 @@ namespace GUI_QLBH
         {
             InitializeComponent();
         }
+
+        private void data_SPNK_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Thống_Kê_Sản_Phẩm_Load(object sender, EventArgs e)
+        {
+            DataClasses1DataContext db = new DataClasses1DataContext();
+            //var get = from lay in db.
+        }
     }
 }

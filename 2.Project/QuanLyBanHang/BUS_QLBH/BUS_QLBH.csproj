@@ -41,11 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BUS_HOADON.cs" />
+    <Compile Include="BUS_KHACHHANG.cs" />
+    <Compile Include="BUS_NHANVIEN.cs" />
+    <Compile Include="BUS_SANPHAM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+
     <Folder Include="KhanhAnBuoi\" />
+
+    <ProjectReference Include="..\DAL_QLBH\DAL_QLBH.csproj">
+      <Project>{c4610c9f-00cb-424b-8df1-81155e1bb79a}</Project>
+      <Name>DAL_QLBH</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QLBH\DTO_QLBH.csproj">
+      <Project>{334cad5e-3e89-423c-8054-fdc50ca2aeff}</Project>
+      <Name>DTO_QLBH</Name>
+    </ProjectReference>
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

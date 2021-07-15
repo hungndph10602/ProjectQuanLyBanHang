@@ -15,10 +15,10 @@ namespace DTO_QLBH
 
         [ForeignKey("khachhang")]
         public int mskh { get; set; }
-
+       
         [ForeignKey("nhanvien")]
         public int msnv { get; set; }
-
+        
         public DateTime ngaylap { get; set; }
 
         public virtual KhachHang khachhang { get; set; }

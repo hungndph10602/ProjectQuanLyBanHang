@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sản_Phẩm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.btn_DongSP = new System.Windows.Forms.Button();
             this.btn_danhsach = new System.Windows.Forms.Button();
             this.btn_skip = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@
             this.btn_timkiem = new System.Windows.Forms.Button();
             this.txt_MSP = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.RTB_ghichu = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btn_taihinh = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,7 @@
             this.txt_gianhap = new System.Windows.Forms.TextBox();
             this.txt_SL = new System.Windows.Forms.TextBox();
             this.txt_TSP = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_masp = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,6 +64,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.btn_DongSP);
             this.groupBox1.Controls.Add(this.btn_danhsach);
             this.groupBox1.Controls.Add(this.btn_skip);
@@ -73,7 +75,7 @@
             this.groupBox1.Controls.Add(this.btn_timkiem);
             this.groupBox1.Controls.Add(this.txt_MSP);
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.richTextBox1);
+            this.groupBox1.Controls.Add(this.RTB_ghichu);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.btn_taihinh);
             this.groupBox1.Controls.Add(this.pictureBox1);
@@ -82,7 +84,7 @@
             this.groupBox1.Controls.Add(this.txt_gianhap);
             this.groupBox1.Controls.Add(this.txt_SL);
             this.groupBox1.Controls.Add(this.txt_TSP);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_masp);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -95,6 +97,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sản Phẩm";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 531);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(142, 17);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Nhập Mã Sản Phẩm :";
             // 
             // btn_DongSP
             // 
@@ -155,9 +166,10 @@
             this.btl_themSP.Image = ((System.Drawing.Image)(resources.GetObject("btl_themSP.Image")));
             this.btl_themSP.Location = new System.Drawing.Point(10, 564);
             this.btl_themSP.Name = "btl_themSP";
-            this.btl_themSP.Size = new System.Drawing.Size(47, 59);
-            this.btl_themSP.TabIndex = 19;
+            this.btl_themSP.Size = new System.Drawing.Size(66, 59);
+            this.btl_themSP.TabIndex = 6;
             this.btl_themSP.UseVisualStyleBackColor = true;
+            this.btl_themSP.Click += new System.EventHandler(this.btl_themSP_Click);
             // 
             // btn_timkiem
             // 
@@ -167,13 +179,15 @@
             this.btn_timkiem.Size = new System.Drawing.Size(61, 41);
             this.btn_timkiem.TabIndex = 18;
             this.btn_timkiem.UseVisualStyleBackColor = true;
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // txt_MSP
             // 
-            this.txt_MSP.Location = new System.Drawing.Point(155, 528);
+            this.txt_MSP.Location = new System.Drawing.Point(176, 528);
             this.txt_MSP.Name = "txt_MSP";
             this.txt_MSP.Size = new System.Drawing.Size(177, 22);
-            this.txt_MSP.TabIndex = 17;
+            this.txt_MSP.TabIndex = 10;
+            this.txt_MSP.Leave += new System.EventHandler(this.btn_timkiem_Click);
             // 
             // dataGridView1
             // 
@@ -185,13 +199,14 @@
             this.dataGridView1.Size = new System.Drawing.Size(736, 190);
             this.dataGridView1.TabIndex = 16;
             // 
-            // richTextBox1
+            // RTB_ghichu
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(492, 212);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(254, 96);
-            this.richTextBox1.TabIndex = 15;
-            this.richTextBox1.Text = "";
+            this.RTB_ghichu.Location = new System.Drawing.Point(492, 212);
+            this.RTB_ghichu.Name = "RTB_ghichu";
+            this.RTB_ghichu.Size = new System.Drawing.Size(254, 96);
+            this.RTB_ghichu.TabIndex = 5;
+            this.RTB_ghichu.Text = "";
+            this.RTB_ghichu.Leave += new System.EventHandler(this.RTB_ghichu_TextChanged);
             // 
             // label8
             // 
@@ -234,35 +249,41 @@
             this.txt_giaban.Location = new System.Drawing.Point(155, 286);
             this.txt_giaban.Name = "txt_giaban";
             this.txt_giaban.Size = new System.Drawing.Size(177, 22);
-            this.txt_giaban.TabIndex = 10;
+            this.txt_giaban.TabIndex = 4;
+            this.txt_giaban.Leave += new System.EventHandler(this.txt_giaban_TextChanged);
             // 
             // txt_gianhap
             // 
             this.txt_gianhap.Location = new System.Drawing.Point(155, 230);
             this.txt_gianhap.Name = "txt_gianhap";
             this.txt_gianhap.Size = new System.Drawing.Size(177, 22);
-            this.txt_gianhap.TabIndex = 9;
+            this.txt_gianhap.TabIndex = 3;
+            this.txt_gianhap.Leave += new System.EventHandler(this.txt_gianhap_TextChanged);
             // 
             // txt_SL
             // 
             this.txt_SL.Location = new System.Drawing.Point(155, 179);
             this.txt_SL.Name = "txt_SL";
             this.txt_SL.Size = new System.Drawing.Size(177, 22);
-            this.txt_SL.TabIndex = 8;
+            this.txt_SL.TabIndex = 2;
+            this.txt_SL.TextChanged += new System.EventHandler(this.txt_SL_TextChanged_1);
+            this.txt_SL.Leave += new System.EventHandler(this.txt_SL_TextChanged_1);
             // 
             // txt_TSP
             // 
             this.txt_TSP.Location = new System.Drawing.Point(155, 125);
             this.txt_TSP.Name = "txt_TSP";
             this.txt_TSP.Size = new System.Drawing.Size(177, 22);
-            this.txt_TSP.TabIndex = 7;
+            this.txt_TSP.TabIndex = 1;
+            this.txt_TSP.Leave += new System.EventHandler(this.txt_TSP_TextChanged);
             // 
-            // textBox1
+            // txt_masp
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 22);
-            this.textBox1.TabIndex = 6;
+            this.txt_masp.Location = new System.Drawing.Point(155, 70);
+            this.txt_masp.Name = "txt_masp";
+            this.txt_masp.Size = new System.Drawing.Size(177, 22);
+            this.txt_masp.TabIndex = 0;
+            this.txt_masp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label6
             // 
@@ -327,6 +348,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Sản_Phẩm";
             this.Text = "Sản_Phẩm";
+            this.Load += new System.EventHandler(this.Sản_Phẩm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -346,7 +368,7 @@
         private System.Windows.Forms.TextBox txt_gianhap;
         private System.Windows.Forms.TextBox txt_SL;
         private System.Windows.Forms.TextBox txt_TSP;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_masp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -356,7 +378,7 @@
         private System.Windows.Forms.Button btn_timkiem;
         private System.Windows.Forms.TextBox txt_MSP;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox RTB_ghichu;
         private System.Windows.Forms.Button btn_DongSP;
         private System.Windows.Forms.Button btn_danhsach;
         private System.Windows.Forms.Button btn_skip;
@@ -364,5 +386,6 @@
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.Button btn_xoaSP;
         private System.Windows.Forms.Button btl_themSP;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -10,6 +10,7 @@ namespace DTO_QLBH
 {
     public class HoaDon
     {
+        //Hungan boi
         [Key]
         public int mahd { get; set; }
 

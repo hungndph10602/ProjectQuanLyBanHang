@@ -23,5 +23,7 @@ namespace DTO_QLBH
 
         public virtual KhachHang khachhang { get; set; }
         public virtual NhanVien nhanvien { get; set; }
+
+        public string khanhAnBoi { get; set; }
     }
 }
